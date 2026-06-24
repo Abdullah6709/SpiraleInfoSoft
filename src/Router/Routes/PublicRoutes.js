@@ -44,62 +44,62 @@ const PublicRoutes = () => {
             <Routes>
                 <Route path='/' element={<PublicLayout />} >
                     <Route index element={<Home />} />
-                    <Route path='/about' element={<About />} />
-                    <Route path='#' element={<Services />} />
-                    <Route path='/career' element={<Career />} />
-                    <Route path='/contact' element={<Contact />} />
-                    <Route path='/blog' element={<Blog />} />
-                    <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+                    <Route path='about' element={<About />} />
+                    <Route path='services' element={<Services />} />
+                    <Route path='career' element={<Career />} />
+                    <Route path='contact' element={<Contact />} />
+                    <Route path='blog' element={<Blog />} />
+                    <Route path='privacy-policy' element={<PrivacyPolicy />} />
                     {/* web Development DropDown */}
-                    <Route path='/services/web-development' element={<WebDevelop />} />
-                    <Route path='/services/web-development/php' element={<Php />} />
-                    <Route path='/services/web-development/laravel' element={<Laravel />} />
-                    <Route path='/services/web-development/reactjs' element={<ReactJs />} />
+                    <Route path='services/web-development' element={<WebDevelop />} />
+                    <Route path='services/web-development/php' element={<Php />} />
+                    <Route path='services/web-development/laravel' element={<Laravel />} />
+                    <Route path='services/web-development/reactjs' element={<ReactJs />} />
 
                     {/* app Development DropDown */}
-                    <Route path='/services/app-development' element={<AppDevlop />} />
-                    <Route path='/services/app-development/react-native' element={<ReactNativeApp />} />
-                    <Route path='/services/app-development/native-android' element={<NativeAndroidApp />} />
-                    <Route path='/services/app-development/native-ios' element={<NativeIosApp />} />
-                    <Route path='/services/app-development/hybrid' element={<HybridApp />} />
-                    <Route path='/services/app-development/cross-plateform' element={<CrossPlateformApp />} />
+                    <Route path='services/app-development' element={<AppDevlop />} />
+                    <Route path='services/app-development/react-native' element={<ReactNativeApp />} />
+                    <Route path='services/app-development/native-android' element={<NativeAndroidApp />} />
+                    <Route path='services/app-development/native-ios' element={<NativeIosApp />} />
+                    <Route path='services/app-development/hybrid' element={<HybridApp />} />
+                    <Route path='services/app-development/cross-plateform' element={<CrossPlateformApp />} />
 
                     {/* cms Development DropDown */}
-                    <Route path='/services/cms-development' element={<CmsDevelop />} />
-                    <Route path='/services/cms-development/wordpress' element={<Wordpress />} />
+                    <Route path='services/cms-development' element={<CmsDevelop />} />
+                    <Route path='services/cms-development/wordpress' element={<Wordpress />} />
 
                     {/* webdesign Development DropDown */}
-                    <Route path='/services/web-designing' element={<WebDesign />} />
-                    <Route path='/services/web-designing/uiux' element={<UiUx />} />
+                    <Route path='services/web-designing' element={<WebDesign />} />
+                    <Route path='services/web-designing/uiux' element={<UiUx />} />
 
                     {/* eCommers Development DropDown */}
-                    <Route path='/services/ecommers-service' element={<Ecommers />} />
+                    <Route path='services/ecommers-service' element={<Ecommers />} />
 
                     {/* Api Services Development DropDown */}
-                    <Route path='/services/api-service' element={<ApiService />} />
+                    <Route path='services/api-service' element={<ApiService />} />
 
                     {/* our Culuture */}
-                    <Route path='/ourCuluture' element={<OurCalture />} />
+                    <Route path='ourCuluture' element={<OurCalture />} />
 
                     {/* Apply */}
-                    <Route path='/apply' element={<Apply />} />
+                    <Route path='apply' element={<Apply />} />
 
                     {/* Software Development */}
-                    <Route path='/software-development' element={<SoftwareDevelopement />} />
+                    <Route path='software-development' element={<SoftwareDevelopement />} />
 
                     {/* Grow Bussiness */}
-                    <Route path='/grow-bussiness' element={<GrowBussiness />} />
+                    <Route path='grow-bussiness' element={<GrowBussiness />} />
 
                     {/* Create Brands */}
-                    <Route path='/create-brands' element={<CreateBrands />} />
+                    <Route path='create-brands' element={<CreateBrands />} />
 
                     {/* blog page */}
-                    <Route path='/blog/mobile-application-development-blog' element={<MobileApplications />} />
-                    <Route path='/blog/10-essentail-tips-for-creating-a-scalable-software-solution' element={<EssentialTips />} />
-                    <Route path='/blog/key-features-every-custom-application' element={<KeyFeatures />} />
-                    <Route path='/blog/the-future-of-UI/UX-game-changing-trends' element={<FutureUIUX />} />
-                    <Route path='/blog/AI-and-Machine-Learning-are-changing-software-development' element={<AIML />} />
-                    <Route path='/blog/leverage-AI-and-automation-for-your-eCommerce-business' element={<AIautomation />} />
+                    <Route path='blog/mobile-application-development-blog' element={<MobileApplications />} />
+                    <Route path='blog/10-essentail-tips-for-creating-a-scalable-software-solution' element={<EssentialTips />} />
+                    <Route path='blog/key-features-every-custom-application' element={<KeyFeatures />} />
+                    <Route path='blog/the-future-of-UI/UX-game-changing-trends' element={<FutureUIUX />} />
+                    <Route path='blog/AI-and-Machine-Learning-are-changing-software-development' element={<AIML />} />
+                    <Route path='blog/leverage-AI-and-automation-for-your-eCommerce-business' element={<AIautomation />} />
 
                 </Route>
                 {/* error page */}
