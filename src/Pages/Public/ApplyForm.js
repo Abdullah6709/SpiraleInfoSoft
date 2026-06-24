@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Box, Typography, useTheme, Grid, TextField, Button, CircularProgress } from '@mui/material';
+import { Box, Typography, TextField, Button, CircularProgress } from '@mui/material';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import UploadIcon from '@mui/icons-material/Upload';
@@ -21,10 +21,8 @@ const names = [
 ];
 
 const ApplyForm = () => {
-    const theme = useTheme();
     const [cvName, setCvName] = useState('');
     const [isOpen, setIsOpen] = useState(false); // Tracks whether dropdown is open
-    const [selectedName, setSelectedName] = useState(''); // Stores the selected name
     const dropdownRef = useRef(null);
 
     // Redux Dispatch and State
@@ -59,7 +57,6 @@ const ApplyForm = () => {
             // Reset the form after submission
             resetForm();
             setCvName(''); // Clear CV name state
-            setSelectedName(''); // Clear selected job type state
         },
     });
 
@@ -80,7 +77,7 @@ const ApplyForm = () => {
 
     // Handle selection of an option
     const handleSelect = (name) => {
-        setSelectedName(name);
+        formik.setFieldValue('jobType', name);
         setIsOpen(false); // Close the dropdown after selection
     };
 
@@ -179,10 +176,7 @@ const ApplyForm = () => {
                             {names.map((name) => (
                                 <li
                                     key={name}
-                                    onClick={() => {
-                                        handleSelect(name);
-                                        formik.setFieldValue('jobType', name); // Update Formik's jobType value
-                                    }}
+                                    onClick={() => handleSelect(name)}
                                     style={{
                                         padding: '8px 10px',
                                         cursor: 'pointer',

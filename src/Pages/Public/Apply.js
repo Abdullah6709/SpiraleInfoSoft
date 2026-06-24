@@ -2,7 +2,6 @@ import React from 'react';
 import {
     Box,
     Typography,
-    useTheme,
     Grid,
 } from '@mui/material';
 import applybg from '../../assest/contact-bg.jpg';
@@ -11,7 +10,7 @@ import ApplyForm from './ApplyForm';
 
 
 const Apply = () => {
-    const theme = useTheme();
+    
 
     const leftContent = {
         title: 'Why Join Us?',

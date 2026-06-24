@@ -49,7 +49,6 @@ const About = () => {
                     zIndex: 2,
                     fontWeight: 'bold',
                     fontSize: '2rem',
-                    letterSpacing: '2px',
                     textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)', // Shadow effect
                     marginBottom: 2, // Space between the texts
                     textTransform: 'uppercase', // Make the text uppercase for emphasis
@@ -66,7 +65,6 @@ const About = () => {
                     zIndex: 2,
                     fontWeight: 'bold',
                     fontSize: '1rem',
-                    letterSpacing: '1px',
                     textShadow: '1px 1px 3px rgba(0, 0, 0, 0.6)', // Shadow effect
                     marginTop: 2, // More space between "About Us" and the second text
                     maxWidth: '80%', // Limit width for readability

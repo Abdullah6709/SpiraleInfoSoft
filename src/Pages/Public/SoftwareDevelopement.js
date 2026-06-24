@@ -1,11 +1,11 @@
 import React from 'react'
 import software from '../../assest/Banner/software.webp';
-import { Box, Grid, Typography, useTheme } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import softwareimg from '../../assest/software-dev1.jpg'
 import Slider from '../../Component/Public/Slider'
 
 const SoftwareDevelopement = () => {
-    const theme = useTheme();
+    
 
     const contentData = {
         title: 'Software Development Services',

@@ -5,9 +5,9 @@ const PublicRoutes = lazy(() => import('./Routes/PublicRoutes'));
 
 const MainRouter = () => {
     return (
-        <div>
+        <Suspense fallback={<div>Loading...</div>}>
             <PublicRoutes />
-        </div>
+        </Suspense>
     );
 }
 

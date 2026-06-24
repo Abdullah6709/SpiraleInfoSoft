@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import {
     Box,
     Typography,
-    useTheme,
     IconButton,
-    Button,
-    Grid,
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
@@ -24,7 +21,7 @@ import image9 from '../../assest/Culuture/image-9.jpg';
 import image10 from '../../assest/Culuture/image-10.jpg';
 
 const OurCulture = () => {
-    const theme = useTheme();
+    
 
     const images = [
         { id: 1, src: image1, alt: 'Image 1' },

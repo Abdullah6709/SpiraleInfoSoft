@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useTheme } from '@mui/material';
 import { Box, Button, Grid, Stack, TextField, Typography, CircularProgress, Alert } from '@mui/material';
@@ -11,19 +11,11 @@ import * as Yup from "yup";
 
 const Footer = () => {
     const theme = useTheme();
-    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+    
     const dispatch = useDispatch();
     const { loading, success, error } = useSelector((state) => state.support);
 
-    // Reset form data on success
-    useEffect(() => {
-        if (success) {
-            setFormData({ name: "", email: "", message: "" }); // Clear the form
-            setTimeout(() => {
-                dispatch(resetState()); // Reset Redux state after a delay
-            }, 3000);
-        }
-    }, [success, dispatch]);
+    // Reset form data on success (handled after Formik setup below)
 
     // Formik setup
     const formik = useFormik({
@@ -42,6 +34,16 @@ const Footer = () => {
             resetForm(); // Clear the form fields after submission
         },
     });
+
+    // Reset form on successful submit and clear redux state after a delay
+    useEffect(() => {
+        if (success) {
+            formik.resetForm();
+            setTimeout(() => {
+                dispatch(resetState());
+            }, 3000);
+        }
+    }, [success, dispatch, formik]);
 
     const handleHome = () => {
         window.location.href = '/';

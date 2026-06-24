@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, Paper, Typography, useTheme } from '@mui/material';
+import { Box, Button, Grid, Typography, useTheme } from '@mui/material';
 import React from 'react';
 import career from '../../assest/Banner/Carrer.png';
 import team from '../../assest/team-work-img.jpg'
